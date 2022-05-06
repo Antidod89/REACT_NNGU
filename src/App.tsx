@@ -1,7 +1,8 @@
 import React from 'react';
+import './assets/scss/normalize.scss';
 
-function App() {
-  return <div>Hello World!</div>;
-}
+const App = () => {
+  return <div>hello world</div>;
+};
 
 export default App;
