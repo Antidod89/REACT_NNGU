@@ -25,6 +25,7 @@ const UsersPageComponent: FC<IProps> = ({ usersDataAttr }) => {
         ) : (
           <div>Пользователи не найдены.</div>
         )}
+
         <Pagination limit={3} itemsAmount={usersDataAttr.length} />
       </div>
     </div>

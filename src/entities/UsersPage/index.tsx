@@ -32,3 +32,6 @@ const UsersPage = () => {
 };
 
 export default UsersPage;
+function useNavigation() {
+  throw new Error('Function not implemented.');
+}

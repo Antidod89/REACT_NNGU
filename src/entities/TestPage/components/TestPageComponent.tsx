@@ -1,24 +1,22 @@
 import React, { useEffect, useMemo, useState } from 'react';
 
-const TestPageComponnent = () => {
+const TestPageComponent = () => {
   const [counter, setCount] = useState(0);
   const [someArray, setSomeArray] = useState([1, 2, 3]);
 
-  const updateArray = useMemo(() => {
+  const updatedArray = useMemo(() => {
     return someArray.map((num) => {
-      console.log('Hello');
+      console.log('hello');
       return num + 10;
     });
   }, [someArray]);
 
   // componentDidMount
-
   useEffect(() => {
     console.log('Компонент отображен');
   }, []);
 
   // componentDidUpdate
-
   //   useEffect(() => {
   //     console.log('Компонент обновлен');
   //   });
@@ -32,11 +30,10 @@ const TestPageComponnent = () => {
   //   }, [someArray]);
 
   //   useEffect(() => {
-  //     console.log('COUNTER или SOME_ARRAY обновлен');
+  //     console.log('COUNTER ИЛИ SOME_ARRAY обновлен');
   //   }, [counter, someArray]);
 
-  //   componentWillUnmount
-
+  // componentWillUnmount
   useEffect(() => {
     return () => {
       console.log('Компонент был удален');
@@ -53,11 +50,11 @@ const TestPageComponnent = () => {
       <button type="button" onClick={() => setSomeArray((prev) => [...prev, prev.length + 1])}>
         Добавить число в массив
       </button>
-      {someArray.map((num, index) => {
+      {updatedArray.map((num, index) => {
         return <div key={`${num + index}`}>{num}</div>;
       })}
     </div>
   );
 };
 
-export default TestPageComponnent;
+export default TestPageComponent;
