@@ -13,7 +13,7 @@ const UserCard: FC<IProps> = ({ id, name, email }) => {
     <div className={style.user_card}>
       <p>{name}</p>
       <p>{email}</p>
-      <Link to={`${id}`}>Подробная инофрмация</Link>
+      <Link to={`${id}`}>Подробная информация</Link>
     </div>
   );
 };

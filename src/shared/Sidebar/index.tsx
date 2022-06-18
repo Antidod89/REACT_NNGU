@@ -16,7 +16,7 @@ const Sidebar = () => {
               key={menuItem.id}
               to={menuItem.path}
               className={`${isActiveClassName} ${style.sidebar_menu_item}`}>
-              <li key={menuItem.id}>{menuItem.name}</li>
+              <li>{menuItem.name}</li>
             </Link>
           );
         })}

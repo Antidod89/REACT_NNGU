@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TestPageComponnent from './components/TestPageComponent';
+import TestPageComponent from './components/TestPageComponent';
 
 const TestPage = () => {
   const [isShow, setIsShow] = useState(true);
@@ -9,7 +9,7 @@ const TestPage = () => {
         Показать или скрыть компонент
       </button>
       <hr />
-      {isShow && <TestPageComponnent />}
+      {isShow && <TestPageComponent />}
     </>
   );
 };
