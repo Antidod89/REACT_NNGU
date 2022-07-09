@@ -37,6 +37,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/destructuring-assignment': 'off',
     'react/require-default-props': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     'prettier/prettier': [
       'error',
       {
